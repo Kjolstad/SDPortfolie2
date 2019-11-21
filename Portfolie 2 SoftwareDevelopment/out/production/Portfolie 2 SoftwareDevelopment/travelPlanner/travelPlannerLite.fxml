@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="travelPlanner.PlannerController">
+    <children>
+        <Button fx:id="searchJourneyButton" layoutX="458.0" layoutY="178.0" mnemonicParsing="false" onAction="#searchJourney" text="Search Journey" />
+        <Text layoutX="172.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TravelPlanner Lite">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Text>
+        <Text layoutX="61.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Journey:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+      <ComboBox fx:id="departureStation" layoutX="61.0" layoutY="124.0" prefHeight="29.0" prefWidth="166.0" promptText="Departure Station" />
+      <ComboBox fx:id="arrivalStation" layoutX="383.0" layoutY="124.0" onAction="#depTimes" prefWidth="150.0" promptText="Arrival Station" />
+      <ComboBox fx:id="departureTime" layoutX="61.0" layoutY="165.0" onAction="#depTimeCombo" prefWidth="150.0" promptText="Departure Time" />
+      <Label fx:id="depTripLabel" layoutX="61.0" layoutY="201.0" text="Departure Trip" />
+      <Label fx:id="depRouteLabel" layoutX="61.0" layoutY="219.0" text="RouteNr" />
+      <Label fx:id="journeyDeparture" layoutX="101.0" layoutY="298.0" text="Journey Departure" />
+      <Label fx:id="journeyArrival" layoutX="103.0" layoutY="335.0" text="JourneyArrival" />
+      <Text layoutX="61.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:" />
+      <Text layoutX="61.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" />
+    </children>
+</AnchorPane>
